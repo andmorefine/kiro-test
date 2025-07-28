@@ -1,0 +1,13 @@
+{
+  "name": "kiro-test",
+  "version": "1.0.0",
+  "description": "Kiro機能テスト環境",
+  "main": "src/sample.js",
+  "scripts": {
+    "test": "echo \"テスト実行中...\" && exit 0",
+    "start": "node src/sample.js"
+  },
+  "keywords": ["kiro", "test", "sample"],
+  "author": "Kiro User",
+  "license": "MIT"
+}
