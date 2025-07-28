@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  # 開発用の軽量構成
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+
+  # 開発用Redis（永続化なし）
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
