@@ -4,7 +4,7 @@
   "description": "Kiro機能テスト環境",
   "main": "src/sample.js",
   "scripts": {
-    "test": "echo \"テスト実行中...\" && exit 0",
+    "test": "node test/calculator.test.js",
     "start": "node src/sample.js"
   },
   "keywords": ["kiro", "test", "sample"],
